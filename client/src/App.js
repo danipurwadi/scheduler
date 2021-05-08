@@ -1,11 +1,11 @@
 import './App.css';
 import UploadSchedule from './components/UploadScheduleComponent';
-// import NavBar from './components/NavBar';
+import NavBar from './components/NavBarComponent';
 
 function App() {
   return (
     <div>
-      <p>Scheduler Website</p>
+      <NavBar />
       <UploadSchedule />
     </div>
     
