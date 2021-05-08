@@ -1,11 +1,11 @@
 import React from 'react';
 
-function UploadSchedule() {
+function NavBar() {
     return(
         <div className = "container">
-            <h1>Upload New Schedule</h1>
+            <p>Navigation Bar</p>
         </div>
     )
 }
 
-export default UploadSchedule;
+export default NavBar;
