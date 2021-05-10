@@ -9,32 +9,15 @@ const Styles = styled.div`
         background-color: #EAECEB;
         padding: 1em;
     }
-    a, .navbar-brand, .navbar-nav, .nav-link, .nav-item, .nav, .logo{
+    .toggle, .toggle .nav-link {
         color: #386641;
+        stroke: #386641;
         transition: 0.3s;
         &:hover {
             color: #BC4749;
+            stroke: #BC4749;
         }
-    }
-    .toggle {
-        color: #386641 !important;
-        stroke: #386641 !important;
-        transition: 0.3s !important;
-        &:hover {
-            color: #BC4749 !important;
-            stroke: #BC4749 !important;
-        }
-    }
-    .toggle .navlink{
-        color: #386641 !important;
-        stroke: #386641 !important;
-        transition: 0.3s !important;
-        &:hover {
-            color: #BC4749 !important;
-            stroke: #BC4749 !important;
-        }
-    }
-    
+    }    
 `
 
 function NavigationBar() {
