@@ -1,12 +1,13 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import UploadSchedule from './components/UploadScheduleComponent';
-import NavBar from './components/NavBarComponent';
+import NavigationBar from './components/NavBarComponent';
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <UploadSchedule />
+      <NavigationBar />
+      {/* <UploadSchedule /> */}
     </div>
     
   );
