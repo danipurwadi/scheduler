@@ -5,19 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPlus} from '@fortawesome/free-solid-svg-icons';
 
 const Styles = styled.div`
-    .navbar {
-        background-color: #EAECEB;
-        padding: 1em;
+    .form-group {
+        padding-bottom: 1em;
     }
-    .toggle, .toggle .nav-link {
-        color: #386641;
-        stroke: #386641;
-        transition: 0.3s;
-        &:hover {
-            color: #BC4749;
-            stroke: #BC4749;
-        }
-    }    
 `
 function UploadSchedule() {
     return(
@@ -32,19 +22,18 @@ function UploadSchedule() {
                     <Form>
                         <Form.Group as={Row} controlId="formScheduleName">
                             <Form.Label column sm="1">
-                            Name
+                                Name
                             </Form.Label>
-                            <Col sm="5">
-                            <Form.Control type="text" placeholder="Actly stuff" />
+                            <Col className="col-lg-5 col-sm-1">
+                                <Form.Control type="text" placeholder="Name of event" />
                             </Col>
                         </Form.Group>
-
                         <Form.Group as={Row} controlId="formScheduleDescription">
                             <Form.Label column sm="1">
-                            Description
+                                Description
                             </Form.Label>
                             <Col sm="5">
-                            <Form.Control type="text" placeholder="Optional" />
+                                <Form.Control type="tex t" placeholder="Optional" />
                             </Col>
                         </Form.Group>
                         <Form.Group as={Row} controlId="formScheduleTimings">
@@ -52,14 +41,14 @@ function UploadSchedule() {
                                 Start Time
                             </Form.Label>
                             <Col sm="2">
-                                <Form.Control type="text" placeholder="Optional" />
+                                <Form.Control type="text" placeholder="09:00" />
                             </Col>
 
                             <Form.Label column sm="1">
                                 End Time
                             </Form.Label>
                             <Col sm="2">
-                                <Form.Control type="text" placeholder="Optional" />
+                                <Form.Control type="text" placeholder="10:00" />
                             </Col>
                             <Col sm="1">
                                 <Button variant="success">
@@ -69,6 +58,13 @@ function UploadSchedule() {
                         </Form.Group>
                     </Form>
                 </Row>
+                <Row className="justify-content-md-center">
+                    <Col lg={{offset:2}}>
+                        <Button variant="success">Add new Activity</Button>
+                    </Col>
+                    
+                </Row>
+                
             </Col>
         </Styles>
     ) 
