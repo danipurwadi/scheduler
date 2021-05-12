@@ -18,40 +18,30 @@ function CreateSchedule() {
                 <Row>
                     <Form>
                         <Form.Group as={Row} controlId="createScheduleTitle">
-                            <Form.Label column sm="1">
-                                Title
-                            </Form.Label>
-                            <Col className="col-lg-5 col-sm-1">
+                            <Form.Label column sm="1">Title</Form.Label>
+                            <Col sm="5">
                                 <Form.Control type="text" placeholder="Name of event" />
                             </Col>
                         </Form.Group>
                         <Form.Group as={Row} controlId="createScheduleDescription">
-                            <Form.Label column sm="1">
-                                Description
-                            </Form.Label>
+                            <Form.Label column sm="1">Description</Form.Label>
                             <Col sm="5">
                                 <Form.Control type="text" placeholder="Optional" />
                             </Col>
                         </Form.Group>
                         <Form.Group as={Row} controlId="createScheduleTimings">
-                            <Form.Label column sm="1">
-                                Earliest
-                            </Form.Label>
+                            <Form.Label column sm="1">Earliest</Form.Label>
                             <Col sm="2">
                                 <Form.Control type="text" placeholder="09:00" />
                             </Col>
 
-                            <Form.Label column sm="1">
-                                Latest
-                            </Form.Label>
+                            <Form.Label column sm="1">Latest</Form.Label>
                             <Col sm="2">
                                 <Form.Control type="text" placeholder="10:00" />
                             </Col>
                         </Form.Group>
                         <Form.Group as={Row} controlId="createSchedulePassword">
-                            <Form.Label column sm="1">
-                                Password
-                            </Form.Label>
+                            <Form.Label column sm="1">Password</Form.Label>
                             <Col sm="5">
                                 <Form.Control type="password"/>
                             </Col>

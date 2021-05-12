@@ -21,32 +21,24 @@ function UploadSchedule() {
                 <Row>
                     <Form>
                         <Form.Group as={Row} controlId="uploadScheduleName">
-                            <Form.Label column sm="1">
-                                Name
-                            </Form.Label>
+                            <Form.Label column sm="1">Name</Form.Label>
                             <Col className="col-lg-5 col-sm-1">
                                 <Form.Control type="text" placeholder="Name of event" />
                             </Col>
                         </Form.Group>
                         <Form.Group as={Row} controlId="uploadScheduleDescription">
-                            <Form.Label column sm="1">
-                                Description
-                            </Form.Label>
+                            <Form.Label column sm="1">Description</Form.Label>
                             <Col sm="5">
                                 <Form.Control type="text" placeholder="Optional" />
                             </Col>
                         </Form.Group>
                         <Form.Group as={Row} controlId="uploadScheduleTiming">
-                            <Form.Label column sm="1">
-                                Start Time
-                            </Form.Label>
+                            <Form.Label column sm="1">Start Time</Form.Label>
                             <Col sm="2">
                                 <Form.Control type="text" placeholder="09:00" />
                             </Col>
 
-                            <Form.Label column sm="1">
-                                End Time
-                            </Form.Label>
+                            <Form.Label column sm="1">End Time</Form.Label>
                             <Col sm="2">
                                 <Form.Control type="text" placeholder="10:00" />
                             </Col>
