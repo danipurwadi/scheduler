@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <NavigationBar />
-      {/* <UploadSchedule /> */}
+      <UploadSchedule />
     </div>
     
   );
