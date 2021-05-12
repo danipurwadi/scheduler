@@ -20,7 +20,7 @@ function UploadSchedule() {
                 </Row>
                 <Row>
                     <Form>
-                        <Form.Group as={Row} controlId="formScheduleName">
+                        <Form.Group as={Row} controlId="uploadScheduleName">
                             <Form.Label column sm="1">
                                 Name
                             </Form.Label>
@@ -28,15 +28,15 @@ function UploadSchedule() {
                                 <Form.Control type="text" placeholder="Name of event" />
                             </Col>
                         </Form.Group>
-                        <Form.Group as={Row} controlId="formScheduleDescription">
+                        <Form.Group as={Row} controlId="uploadScheduleDescription">
                             <Form.Label column sm="1">
                                 Description
                             </Form.Label>
                             <Col sm="5">
-                                <Form.Control type="tex t" placeholder="Optional" />
+                                <Form.Control type="text" placeholder="Optional" />
                             </Col>
                         </Form.Group>
-                        <Form.Group as={Row} controlId="formScheduleTimings">
+                        <Form.Group as={Row} controlId="uploadScheduleTiming">
                             <Form.Label column sm="1">
                                 Start Time
                             </Form.Label>
