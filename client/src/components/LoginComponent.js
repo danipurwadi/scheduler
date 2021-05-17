@@ -16,31 +16,34 @@ const Styles = styled.div`
 `
 function Login() {
     return(
-        <Styles >
-            <Col md={{span: 4, offset:"4"}}>
-                <Form className="">
+        <div style={{height: "90vh"}}>
+            <Row className="align-items-center h-75 w-100">
+            <Col md={{span: 4, offset:"4"}} >
+                <Form>
                     <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                        </Form.Text>
+                        <Row>
+                            <Col md="3"><Form.Label>Email address</Form.Label></Col>
+                            <Col><Form.Control type="email" placeholder="Enter email" /></Col>
+                        </Row>
                     </Form.Group>
-
+                    <br/>
                     <Form.Group controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Row>
+                            <Col md="3"><Form.Label>Password</Form.Label></Col>
+                            <Col><Form.Control type="password" placeholder="Password" /></Col>
+                        </Row>
                     </Form.Group>
-                    <Form.Group controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Check me out" />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Submit
-                    </Button>
+                    <br/>
+                    <Row className="justify-content-center" md="auto">
+                        <Button variant="primary" type="submit">
+                            Submit
+                        </Button>
+                    </Row>
+                    
                 </Form>
             </Col>
-            
-        </Styles>
+            </Row>
+        </div>
     ) 
 }
 
