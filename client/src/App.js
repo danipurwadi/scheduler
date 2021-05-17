@@ -4,12 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CreateSchedule from './components/CreateScheduleComponent';
 import NavigationBar from './components/NavBarComponent';
 import Main from './components/MainComponent';
+import Login from './components/LoginComponent';
 
 function App() {
   return (
     <div>
       <NavigationBar />
-      <Main />
+      <Login />
     </div>
     
   );
